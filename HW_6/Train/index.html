@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Бронювання квитків</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Бронювання квитків на поїзд</h2>
+
+  <div class="form-section">
+    <label>Напрямок:</label>
+    <select id="direction">
+      <option value="Київ - Львів">Київ - Львів</option>
+      <option value="Київ - Одеса">Київ - Одеса</option>
+      <option value="Київ - Харків">Київ - Харків</option>
+    </select>
+
+    <label>Дата поїздки:</label>
+    <input type="date" id="date" required>
+
+    <button id="showSeats">Показати місця</button>
+  </div>
+
+  <div id="seatsSection" class="seats-section" style="display:none;">
+    <h3>Оберіть місця:</h3>
+    <div class="seats-grid" id="seatsGrid"></div>
+    <button id="bookSeats">Забронювати</button>
+  </div>
+
+  <div class="view-section">
+    <h3>Заброньовані квитки:</h3>
+    <ul id="bookedList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
