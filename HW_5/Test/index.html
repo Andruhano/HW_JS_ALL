@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тест</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Тест: Оберіть правильну відповідь</h2>
+
+  <form id="testForm">
+    <div class="question">
+      <p>1. Столиця України:</p>
+      <label><input type="radio" name="q1" value="a"> Львів</label><br>
+      <label><input type="radio" name="q1" value="b"> Київ</label>
+    </div>
+
+    <div class="question">
+      <p>2. Який рік початку Другої світової війни?</p>
+      <label><input type="radio" name="q2" value="a"> 1939</label><br>
+      <label><input type="radio" name="q2" value="b"> 1945</label>
+    </div>
+
+    <div class="question">
+      <p>3. Що таке HTML?</p>
+      <label><input type="radio" name="q3" value="a"> Мова програмування</label><br>
+      <label><input type="radio" name="q3" value="b"> Мова розмітки</label>
+    </div>
+
+    <button type="submit">Перевірити</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
