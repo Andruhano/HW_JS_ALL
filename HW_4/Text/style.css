@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.resizable {
+  width: 300px;
+  height: 150px;
+  border: 2px solid #333;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none; 
+  overflow: auto;
+}
+
+.resizer {
+  width: 15px;
+  height: 15px;
+  background: #333;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+}

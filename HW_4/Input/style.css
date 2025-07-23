@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+}
+
+.note {
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}
