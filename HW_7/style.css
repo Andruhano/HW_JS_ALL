@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.palette {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.color-box {
+  width: 180px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: black;
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+.color-box .name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.color-box .type {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.color-box .code {
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+}

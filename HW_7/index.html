@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Палітра кольорів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Додати новий колір</h2>
+  <form id="colorForm">
+    <label>Назва:
+      <input type="text" id="name" required>
+      <div class="error" id="nameError"></div>
+    </label>
+    <br><br>
+    <label>Тип:
+      <select id="type">
+        <option value="RGB">RGB</option>
+        <option value="RGBA">RGBA</option>
+        <option value="HEX">HEX</option>
+      </select>
+    </label>
+    <br><br>
+    <label>Код кольору:
+      <input type="text" id="code" required placeholder="Напр: 255,0,0 або #FF0000">
+      <div class="error" id="codeError"></div>
+    </label>
+    <br><br>
+    <button type="submit">Save</button>
+  </form>
+
+  <div class="palette" id="palette"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
