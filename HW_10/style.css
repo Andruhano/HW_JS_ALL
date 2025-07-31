@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.movie {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+button.details-btn {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.page-btn {
+  margin: 5px;
+  padding: 5px 10px;
+}
