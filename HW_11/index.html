@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акраноїд</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="JavaScript-logo.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+<div class="container text-center mt-4">
+
+    <div class="mb-3">
+        <label for="brickCount" class="form-label text-white">Кількість цеглинок:</label>
+        <input type="number" id="brickCount" class="form-control w-25 mx-auto" min="1" max="100" value="45">
+    </div>
+
+    <div class="d-flex justify-content-center gap-3 mb-4">
+        <button id="startBtn" class="btn btn-success btn-lg">
+            <i class="bi bi-play-fill"></i> Почати гру
+        </button>
+        <button id="instructionsBtn" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#instructionsModal">
+            <i class="bi bi-info-circle"></i> Інструкція
+        </button>
+        <button id="pauseBtn" class="btn btn-warning btn-lg d-none">
+            <i class="bi bi-pause-fill"></i> Пауза
+        </button>
+    </div>
+
+    <div class="game-info d-flex justify-content-center gap-5 mb-4">
+        <p class="text-white fs-5">Рахунок: <span id="score" class="fw-bold">0</span></p>
+        <p class="text-white fs-5">Життя: <span id="lives" class="fw-bold">3</span></p>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="game-container position-relative">
+            <canvas id="gameCanvas" class="border border-white rounded"></canvas>
+            <div id="gameOverScreen" class="position-absolute top-50 start-50 translate-middle text-center d-none">
+                <h2 class="text-white mb-4">Гру завершено</h2>
+                <p id="finalScore" class="text-white fs-4 mb-4">Рахунок: 0</p>
+                <button id="restartBtn" class="btn btn-danger btn-lg">
+                    <i class="bi bi-arrow-repeat"></i> Грати знову
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="instructionsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title">Керування в грі</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark text-white border-secondary">
+                            <i class="bi bi-arrow-left-right"></i> Ліва/Права стрілка - рух платформи
+                        </li>
+                        <li class="list-group-item bg-dark text-white border-secondary">
+                            <i class="bi bi-space"></i> Пробіл - пауза
+                        </li>
+                        <li class="list-group-item bg-dark text-white border-secondary">
+                            <i class="bi bi-controller"></i> Збивайте цеглинки, не даючи м'ячу впасти
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Зрозуміло</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
