@@ -1,0 +1,16 @@
+.user-info {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.user-info span {
+    font-weight: bold;
+}
+
+#time-remaining {
+    font-style: italic;
+    color: #dc3545;
+}
